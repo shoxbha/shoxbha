@@ -1,0 +1,132 @@
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'term';
+    src: url(/assets/fonts/termius.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(15, 14, 14);
+    color: #ffffff;
+    font-family: Iosevka;
+}
+i{
+    color: #FFFFFF;
+}
+i:hover{
+    color: #bada55;
+}
+.green{
+    color: #bada55;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #bada55;
+    padding: 10px 20px;
+    font-family: Iosevka;
+    border-bottom: 2px dashed #bada55;
+}
+
+.left, .center, .right {
+    display: flex;
+    align-items: center;
+   
+}
+.left{
+    border: 1px dashed #bada55;
+    padding: 4px;
+}
+.center{
+    color: #FFFFFF;
+}
+.link, .link-submenu {
+    text-decoration: none;
+    color: #bada55;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.link:hover, .link-submenu:hover {
+    color: white;
+}
+
+.mobile-toggle {
+    display: none;
+}
+
+.mobile-submenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+#mobile-menu-toggle {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .center, .right {
+        display: none;
+    }
+
+    .mobile-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.codedText{
+    background-color: #FFFFFF;
+    color: #000000;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+    border-radius: 4px;
+    margin-right: 2px;
+    font-weight: bold;
+}
+.hero {
+    margin-left: 0%;
+    font-family: 'term';
+    overflow-x: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+    z-index: 5;
+}
+
+.hero h1 {
+    font-size: 8em;
+}
+
+.hero .subtitle {
+    font-size: 4em;
+    text-align: center;
+}
+.subtitle{
+    height: 200%;
+    position: absolute;
+    color: #bada55;
+    z-index: -1;
+    
+}
+.pic{
+    height:500px;
+    margin-left: 10;
+}
+
+td{
+    padding-left: 10%;
+}
+.orange{
+    color: #f5f05d;
+}
+
