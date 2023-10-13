@@ -3,170 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShoXbha</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=JetBrains+Mono&family=Playfair+Display&family=Rajdhani&family=Slabo+27px&display=swap" rel="stylesheet">
-<style>
-
-   /* Navbar styles */
-        body{
-            background-color: black;
-        }
-        *{
-            font-family: 'Rajdhani', sans-serif;
-
-        }
-        .navbar {
-            background-color: black;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            border-bottom: 1px dashed #FF8400;
-        }
-
-        .navbar a {
-            text-decoration: none;
-            color: white;
-            margin: 0 10px;
-            font-weight: bold;
-            font-size: 200%;
-        }
-
-        .navbar a:hover {
-            color: #FF8400;
-        }
-
-        /* Right-side content styles */
-        .navbar-right {
-            display: flex;
-            align-items: center;
-        }
-
-        .date-time {
-            margin-right: 10px;
-            color: #FFFFFF;
-            font-size: 200%;
-        }
-
-        .navbar-center {
-            
-            text-align: center;
-        }
-        .hero {
-            position: fixed;
-            background: url('your-image.jpg') center/cover no-repeat;
-            color: white;
-            text-align: center;
-            top:0;
-            font-weight: bolder;
-        }
-
-        .hero-title {
-            font-size: larger;
-            font-weight: lighter;           
-             font-family: 'Rajdhani', sans-serif;
-
-        }
-
-        .hero-subtitle {
-            font-size: 18px;
-            margin-top: 5px;
-            font-weight: lighter;
-        }
-
-        .hero-image {
-            margin-top: 10%;
-            max-width: 100%;
-            height: 600px;
-            border: 2px dashed white;
-        }
-
-        /* Media query for responsiveness */
-        @media (min-width: 768px) {
-            .hero {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                position: fixed;
-                top:0;
-            }
-
-            .hero-title{
-                text-align: left;
-                font-size: 550%;
-                padding-left: 10%;
-                font-weight: bolder;
-                padding-top: 10%;
-            font-family: 'Rajdhani', sans-serif;
-
-                
-            }
-            .hero-subtitle {
-                text-align: left;
-                font-size:200% ;
-                padding-left: 10%;
-                padding-left: 35%;
-                
-                
-            }
-
-            .hero-content {
-               
-                padding: 0 20px;
-            }
-        }
-        marquee{
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><title>./shoxbha.sh</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-center">
-            <a href="mailto:nikkunsh@gmail.com">Contact -&gt;</a>
-            <a href="https://instagram.com/nissshh.py">Connect -&gt;</a>
-            <a href="https://instagram.com/nissshh.py"> ⛛ RESUME;</a>
+    <nav class="navbar">
+        <div class="left">
+            <span>» <span class="codedText">shoxbha</span>@localhost | <span id="connection-status"><i class="fa fa-check-circle-o" style="color: #bada55;"></i><span style="color: #FFFFFF;padding-right: 4px;" > connected </span></span></span>
         </div>
-        
-        <div class="navbar-right">
-            <div class="date-time">
-                <span id="time"></span> / <span id="user-info" style="color: #FF8400;"> shoxbha@localhost</span>
-            </div>
+        <div class="center">
+           [&nbsp;<div id="date-time"></div><span> | Kolkata(IN) ]</span>
         </div>
+        <div class="right">
+            <a href="#" class="link">./connect(<i class="fa fa-linkedin-square"></i>)</a>
+            <a href="#" class="link">./contact(<i class="fa fa-envelope-square"></i>)</a>
+            <a href="https://github.com/shoxbha" class="link" id="github-link" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+        <div class="mobile-toggle">
+            <span>» shoxbha@localhost | </span>
+            <div id="mobile-menu-toggle">☰</div>
+        </div>
+        <div class="mobile-submenu">
+            <div id="date-time-submenu"></div>
+            <a href="#" class="link-submenu">.connect</a>
+            <a href="#" class="link-submenu">.contact</a>
+            <a href="https://github.com" class="link-submenu" id="github-link-submenu">GitHub</a>
+        </div>
+    </nav>
+    <div id="blob"></div>
+<div id="blur"></div>
+    <div class="hero">
+        <table>
+            <tr>
+                <td style="width: 30%;">
+        <h1><span class="orange">shoxbha</span> / SHOBHA</h1>
+        <div class="subtitle" id="coding-quotes"></div>
+    </td>
+    <td style="padding-right: 10%;">
+        <img src="assets/images/main.png" alt="" srcset="" class="pic">
+    </td>
+    </tr>
+    </table>
     </div>
-    <div class="marq">
-        <marquee behavior="" direction="right" loop="4000">DEVELOPER | DESIGNER | HTML | CSS | JAVASCRIPT | PHP | MYSQL |DEVELOPER | DESIGNER | HTML | CSS | JAVASCRIPT | PHP | MYSQL |DEVELOPER | DESIGNER | HTML | CSS | JAVASCRIPT | PHP | MYSQL |DEVELOPER | DESIGNER | HTML | CSS | JAVASCRIPT | PHP | MYSQL |DEVELOPER | DESIGNER | HTML | CSS | JAVASCRIPT | PHP | MYSQL |</marquee>
-        </div>
-     <!-- Hero Section -->
-     <div class="hero">
-        <div class="hero-content">
-            <!-- Subsection 1: Hero Title -->
-            <h1 class="hero-title"><img src="github-alt.svg" alt="" srcset=""><span style="color: #FF8400;font-style: unset;">sho<span style="color: #FFFFFF;">X</span>bha </span> / Shobha Kumari<sub><span style="color: #FF8400;font-weight: bolder;"> <br>| </span> Aspiring Web Developer</sub></h1>
-            <!-- Subsection 1: Hero Subtitle (Lorem Ipsum) -->
-            
-        </div>
-        <!-- Subsection 2: Hero Image -->
-        <img class="hero-image" src="prodp.jpg"  alt="Your Image">
-    </div>
-        
-    <script>
-        // JavaScript to display date and time
-        function updateTime() {
-            const now = new Date();
-            const timeElement = document.getElementById('time');
-            const hours = now.getHours();
-            const minutes = now.getMinutes();
-            const seconds = now.getSeconds();
-            const ampm = hours >= 12 ? 'PM' : 'AM';
-            const formattedTime = `${hours % 12}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')} ${ampm} ${now.toLocaleDateString()}`;
-            timeElement.textContent = formattedTime;
-        }
-
-        updateTime(); // Initial call to display time
-        setInterval(updateTime, 1000); // Update time every second
-    </script>
+    
+    
+    
+    <script src="script.js"></script>
 </body>
 </html>
