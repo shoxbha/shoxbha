@@ -132,10 +132,10 @@ td{
 }
 .cert{
     background-color: orange;
-    margin-top: 10%;
+    margin-top: 15%;
     text-align: left;
-    width: 50%;
-    margin-left: 10%;
+    width: 30%;
+    margin-left: 11%;
 }
 .cert h1{
     color: #000000;
@@ -158,6 +158,7 @@ td{
     flex: 2;
     padding: 20px;
     margin-right: 10%;
+    margin-top: 1%;
     
 }
 
@@ -165,7 +166,7 @@ td{
     list-style: none;
     padding: 0;
     width: 500px;
-    border: 1px dashed #bada55;
+    border: 1px  #bada55;
     
 }
 
@@ -175,6 +176,7 @@ td{
     padding: 5px;
     color: #f0f0f0;
     border-radius: 10%;
+    border-bottom: 1px solid white;
     
     
 }
