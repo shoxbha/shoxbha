@@ -179,12 +179,14 @@ td{
     color: #f0f0f0;
     border-bottom: 1px solid white;
     font-size: 30px;
-    transition: 0.4 ease-in-out;
+    transition: 0.5s;
+    text-transform: uppercase;
     
 }
 .image-preview li:hover{
     background-color: #bada55;
     color: #000000;
+    border-radius: 4px;
 }
 
 .image-preview img {
