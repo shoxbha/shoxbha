@@ -30,7 +30,7 @@ i:hover{
     background-color: black;
     color: #bada55;
     padding: 10px 20px;
-    font-family: Iosevka;
+    font-family: term;
     border-bottom: 2px dashed #bada55;
     z-index: 999;
 }
